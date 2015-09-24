@@ -22,9 +22,9 @@ is the only thing running on your system you can map the port to 80 and no
 proxy is needed. i.e. `-p=80:80` Also be sure your mounted directory on your
 host machine is already created before running this.
 
-    mkdir -p /mnt/countly
-    mkdir -p /mnt/countly/log
-    mkdir -p /mnt/countly/db
+    sudo mkdir -p /mnt/countly
+    sudo mkdir -p /mnt/countly/log
+    sudo mkdir -p /mnt/countly/db
     sudo docker run  -d -p=10000:80 -v=/mnt/countly:/data boomer/countly
 
 From now on when you start/stop docker-countly you should use the container id
