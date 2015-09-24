@@ -23,7 +23,7 @@ ENV   DEBIAN_FRONTEND dialog
 
 ## Setup Countly
 RUN   mkdir -p /data/log && \
-      cd /opt; git clone https://github.com/RyanTech/countly-server.git countly --depth 1 && \
+      cd /opt; git clone https://github.com/Boomer75013/countly-server.git countly --depth 1 && \
       cd /opt/countly/api ; npm install time log-timestamp formidable async moment mongoskin geoip-lite underscore nodemailer request nodemailer-sendmail-transport nodemailer-smtp-transport express connect-mongoskin express-expose imagemagick string connect-flash ejs && \
       rm /etc/nginx/sites-enabled/default && \
       cp /opt/countly/bin/config/nginx.server.conf /etc/nginx/sites-enabled/default && \
