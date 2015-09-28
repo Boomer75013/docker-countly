@@ -25,7 +25,7 @@ host machine is already created before running this.
     sudo mkdir -p /mnt/countly
     sudo mkdir -p /mnt/countly/log
     sudo mkdir -p /mnt/countly/db
-    sudo docker run  -d -p=10000:80 -v=/mnt/countly:/data boomer/countly
+    sudo docker run  -d -p=10000:80 -v=/mnt/countly:/data boomer/docker-countly
 
 From now on when you start/stop docker-countly you should use the container id
 with the following commands. To get your container id, after you initial run
@@ -38,7 +38,7 @@ name which is `boomer/countly:latest`.
 ### Notes on the run command
 
  + `-v` is the volume you are mounting `-v=host_dir:docker_dir`
- + `boomer/countly` is simply what I called my docker build of this image
+ + `boomer/docker-countly` is simply what I called my docker build of this image
  + `-d=true` allows this to run cleanly as a daemon, remove for debugging
  + `-p` is the port it connects to, `-p=host_port:docker_port`
 
