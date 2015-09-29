@@ -30,7 +30,7 @@ host machine is already created before running this.
 From now on when you start/stop docker-countly you should use the container id
 with the following commands. To get your container id, after you initial run
 type `sudo docker ps` and it will show up on the left side followed by the image
-name which is `boomer/countly:latest`.
+name which is `boomer/docker-countly:latest`.
 
     sudo docker start <container_id>
     sudo docker stop <container_id>
